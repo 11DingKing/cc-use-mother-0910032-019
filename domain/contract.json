@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "product": "库存批次全链追溯",
+  "source_context": "当前 GitHub 账号内通过正式容器验证的 Python 后端项目群",
+  "actors": [
+    "采购计划员",
+    "供应商",
+    "质量工程师",
+    "仓储管理员"
+  ],
+  "states": [
+    "草拟",
+    "待确认",
+    "已下达",
+    "履行中",
+    "已关闭"
+  ],
+  "invariants": [
+    "库存事件溯源",
+    "拆分合并守恒",
+    "补偿事件更正",
+    "双向批次追踪"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "0910032-019-A",
+      "actor": "采购计划员",
+      "state": "草拟"
+    },
+    {
+      "case_id": "0910032-019-B",
+      "actor": "仓储管理员",
+      "state": "待确认"
+    }
+  ],
+  "tags": [
+    "inventory-lineage",
+    "event-ledger"
+  ]
+}
