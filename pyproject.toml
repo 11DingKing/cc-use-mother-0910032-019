@@ -1,6 +1,15 @@
 [project]
 name = "domain-contract-0910032-019"
-version = "0.1.0"
-description = "库存批次全链追溯的领域约定与校验工具"
+version = "0.2.0"
+description = "库存批次全链追溯：不可变事件账本、数量守恒、补偿事件与双向召回"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.scripts]
+inventory-http = "inventory_trace.api:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
