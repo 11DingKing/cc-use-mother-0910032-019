@@ -1,6 +1,6 @@
 [project]
 name = "domain-contract-0910032-019"
 version = "0.1.0"
-description = "库存批次全链追溯的领域约定与校验工具"
+description = "库存批次全链追溯：领域契约、不可变事件台账后端与双向追踪"
 requires-python = ">=3.11"
 dependencies = []
